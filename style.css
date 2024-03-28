@@ -1,0 +1,584 @@
+@charset "UTF-8";
+
+:root {
+
+    --color1: #FDF2BF;
+    --color2: #240008;
+    --color3: #F0B400;
+    --color4: #7A001B;
+    --color45: #520112;
+    --color5: #00A8E6;
+
+    --altcolor1: #403502;
+    --altcolor2: #FFDBE3;
+    --altcolor3: #FF859F;
+    --altcolor4: #1AC2FF;
+    --altcolor5: #FFC30F;
+}
+
+
+
+
+
+
+
+body{
+    background-color:var(--color2);
+    color: var(--color1 , --altcolor1);
+    font-family: Montserrat;
+
+}
+
+
+  
+
+nav{
+    margin:1rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#main{
+    margin: 1rem;
+    font-family: Overpass Mono;
+    all: unset;
+    cursor: pointer;
+    
+}
+
+
+
+#sobreMim1{
+    font-size: 1rem;
+    all:unset;
+    cursor: pointer;
+}
+
+#sobreMim1:hover{
+    height: 4vh;
+    background: var(--color4);
+    border-radius: 12px;
+}
+
+#projetos1{
+    font-size: 1rem;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#projetos1:hover{
+    height: 4vh;
+    background: var(--color4);
+    border-radius: 12px;
+}
+
+#contato1{
+    font-size: 1rem;
+    all: unset;
+    cursor: pointer;
+}
+
+#contato1:hover{
+    height: 4vh;
+    background: var(--color4);
+    border-radius: 12px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    gap:3rem;
+    position: relative ;
+    right: 12rem;
+    padding: 1rem;
+
+
+}
+
+.mainitem{
+    margin:1rem;
+    font-size:3rem;
+    font-family: Overpass Mono;
+    font-weight: bold;
+    display: flex;
+}
+
+
+
+
+
+#body .desaparecer{
+    display: none !important;
+    z-index: -10 !important;
+    opacity: 0 !important; 
+}
+
+#body .aparecer{
+    display: block !important;
+    z-index: 10 !important;
+    opacity: 1 !important;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    nav {
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    
+    .navbar {
+      right: 0;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    
+    .mainitem {
+      font-size: 1.5rem;
+    }
+  
+    .aboutmecontainer {
+        height: 100vh;  
+        width: 100vw;   
+        margin: 0;     
+      }
+    
+      .aboutmecontainer img {
+        height: auto;   
+        width: 20%;     
+        margin: 1rem;   
+      }
+    
+      .aboutme {
+        width: 10%;   
+        flex-direction: column;  
+        align-items: center;    
+      }
+    
+      .aboutme p {
+        transform: translateY(-100px);
+        margin-top: 1rem;  
+      }
+    
+
+      .myprojectscontainer {
+        height: auto;  
+        width: auto;   
+        margin: 0;      
+      }
+    
+      .projectcards {
+        flex-wrap: wrap;  
+        justify-content: center;  
+      }
+    
+      .projectcard1,
+      .projectcard2 {
+        width: 48%;    
+        margin: 1rem 0;
+        transform: translateY(-30px); 
+      }
+    
+      .projectcard3{
+        display: none;
+        
+      }
+
+      .projectcard1 img,
+      .projectcard2 img,
+      .projectcard3 img {
+        display: flex;
+        justify-content: space-between;
+        height: 12vh;   
+        width: 3vw;
+      }
+    
+      .contactmecontainer {
+        height: auto;  
+        width: 100vw;   
+        margin: 0;     
+      }
+    
+      .contactmeheader,
+      .contactmeicons {
+        padding: 0rem;  
+        justify-content: center;   
+      }
+    
+      .contactmeicons {
+        margin: 1rem ;  
+      }
+    
+      .contacticon1,
+      .contacticon2 {
+        width: 45%;    
+        margin: 1rem 0;  
+        height: auto;   
+      }
+    
+      .contacticon1 img,
+      .contacticon2 img {
+        height: auto;   
+        width: 100%;   
+        
+      }
+    
+      .contacticon a:link {
+        height: auto;   
+      }
+
+  }
+
+
+/* Página Principal */
+
+
+
+
+
+.containermain{
+    background: var(--color4);
+    height: 50vh;
+    width: 95vw;
+    border-radius: 12px;
+    margin: 1rem;
+    display: flex;
+    
+
+}
+
+.containermain:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+
+}
+
+.containerimage img{
+    height:20rem;
+    width:20rem;
+    max-height: 20rem;
+}
+
+
+
+.containertext{
+    padding: 1rem;
+    margin:1rem;
+    max-width:35rem;
+    color: var(--color3);
+    animation:gradient 3s linear;
+    animation-iteration-count: infinite;
+}
+
+.containertext p{
+    font-family: PT Sans;
+    color: var(--color1);
+}
+
+.itemboxes{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.itembox1{
+    background: var(--color4);
+    height: 40vh;
+    width: 25vw;
+    border-radius:12px ;
+    margin: 1rem;
+    
+}
+
+.itembox1:hover{
+    box-shadow:var(--color45) 4px 4px 3px;
+}
+
+.itemtext1{
+
+    margin: 1rem;
+}
+
+ .itemtext1 p{
+
+    font-family: PT Sans;
+ }
+
+
+.itembox2{
+
+    background: var(--color4);
+    height: 40vh;
+    width: 25vw;
+    border-radius: 18px;
+    margin: 1rem;
+}
+
+.itembox2:hover{
+
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.itemtext2{
+
+    margin: 1rem;
+}
+
+.itemtext2 p{
+    font-family: PT Sans;
+}
+
+.itembox3{
+
+    background: var(--color4);
+    height: 40vh;
+    width: 50vh;
+    border-radius: 18px;
+    margin: 1rem;
+}
+
+.itembox3:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.itemtext3{
+    margin: 1rem;
+}
+
+.itemtext3 p{
+    font-family: PT Sans;
+}
+
+.itemtext3 p a:hover{
+    color: var(--color5);
+
+}
+
+.itemtext3 p a:visited{
+    color: var(--color3);
+}
+
+.itemtext3 p a{
+    text-decoration: none;
+}
+
+
+@keyframes gradient{
+    100%,0%{
+        color: #a80024;
+    }
+    55%{
+        color: #ffc9d5;
+    }
+
+}
+
+/* Fim da Página Principal */
+
+
+/* Início da Página Sobre Mim */
+
+.aboutmecontainer{
+
+    background:var(--color4);
+    margin: 1rem;
+    height: 80vh ;
+    width: 95vw;
+    display: flex;
+    border-radius: 12px;
+
+}
+
+.aboutmecontainer:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.aboutmecontainer img{
+ 
+    height:20rem;
+    width:15rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10%;
+    
+}
+
+
+
+.aboutme{
+
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+    width: 85%;
+    
+}
+
+.aboutme p{
+
+    margin-top: 5rem;
+    font-size:large;
+}
+
+
+
+
+/* Fim da Página Sobre Mim */
+
+
+/* Meus Projetos Página Início */
+
+.myprojectscontainer{
+
+    margin: 1rem;
+    height: 80vh;
+    width:95vw;
+    background: var(--color4);
+   border-radius: 12px;
+}
+
+.myprojectscontainer:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+
+.myprojects{
+
+  display: flex;
+  justify-content: center;
+}
+
+.projectcards{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.projectcard1{
+
+    background: var(--color2);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard1 img{
+
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.projectcard2{
+  
+    background: var(--color2);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard2 img{
+
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.projectcard3{
+
+    transform: translateY(-7px);
+    height: 17rem;
+    width:25vw;
+    border-radius: 12px;
+    margin: 1rem;
+}
+
+.projectcard3 img{
+    height: 100%;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+/* Meus Projetos Página Fim  */
+
+/* Fale comigo Página Início */
+
+.contactmecontainer{
+
+    margin: 1rem;
+    height: 80vh;
+    width:95vw;
+    background: var(--color4);
+    border-radius: 12px;
+}
+
+.contactmecontainer:hover{
+    box-shadow: var(--color45) 4px 4px 3px;
+}
+.contactmeheader{
+  
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contactmeicons{
+
+    display: flex;
+    justify-content: space-around;
+    margin:2rem;
+
+}
+
+.contacticon1{
+  
+    height: 25vh;
+    width:15vw;
+}
+
+.contacticon1 img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.contacticon a:link{
+
+    color: var(--color1);
+    
+
+    height: 4rem;
+    border-radius: 12px;
+    text-decoration: none;
+    outline: none;
+}
+
+.contacticon2{
+
+    height: 25vh;
+    width:15vw;
+}
+
+.contacticon2 img{
+
+    height: 100%;
+    width: 100%;
+}
